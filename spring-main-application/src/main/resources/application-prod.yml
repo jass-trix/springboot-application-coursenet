@@ -1,0 +1,10 @@
+server:
+  port: 1234
+
+database-config:
+  port: 3306
+  username: prod-db
+  password: jhsdjlaksj1289312983
+  url: jdbc:mysql://localhost:3306/test
+
+
