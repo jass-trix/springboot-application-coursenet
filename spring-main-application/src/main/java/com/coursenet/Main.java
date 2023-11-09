@@ -28,7 +28,7 @@ public class Main implements CommandLineRunner {
       System.out.println(orderDTO.getName() + " " + orderDTO.getDescription());
     });
 
-    OrderDTO findOrder = orderController.getOrder(1L);
+    OrderDTO findOrder = orderController.getOrder(2L);
     System.out.println(findOrder.getName() + " " + findOrder.getDescription());
   }
 

@@ -10,8 +10,8 @@ database-config:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/coursenet
-    username: postgres
-    password: c0c0copo
+    username: jasson.harsojo
+    password:
   jpa:
     show-sql: true
     properties:

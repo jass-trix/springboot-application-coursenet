@@ -10,8 +10,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-  @Autowired
   private OrderRepositoryJPA orderRepository;
+
+  @Autowired
+  public OrderServiceImpl(OrderRepositoryJPA orderRepository) {
+    this.orderRepository = orderRepository;
+  }
+
 
   @Override
   public void createNewOrder(String name, String user) {
