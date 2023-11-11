@@ -13,6 +13,8 @@
         <module>order-application-api</module>
         <module>order-application-impl</module>
         <module>database-connector</module>
+        <module>product-application-api</module>
+        <module>product-application-impl</module>
     </modules>
 
     <properties>

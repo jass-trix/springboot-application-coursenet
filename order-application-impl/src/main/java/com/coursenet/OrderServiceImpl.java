@@ -49,4 +49,30 @@ public class OrderServiceImpl implements OrderService {
         order.getDescription()
     );
   }
+
+  @Override
+  public void deleteOrder(Long orderId) {
+    orderRepository.deleteById(orderId);
+  }
+
+  @Override
+  public void updateOrder(long orderId, OrderDTO orderDTO) {
+    Order order = orderRepository.findById(orderId).orElse(null);
+    if (order == null) {
+      return;
+    }
+    order.setName(orderDTO.getName());
+    order.setDescription(orderDTO.getDescription());
+    orderRepository.save(order);
+  }
+
+  @Override
+  public void updateOrder(long orderId, String descriptionData) {
+    Order order = orderRepository.findById(orderId).orElse(null);
+    if (order == null) {
+      return;
+    }
+    order.setDescription(descriptionData);
+    orderRepository.save(order);
+  }
 }
