@@ -21,3 +21,14 @@ spring:
           lob:
             non_contextual_creation: true
         ddl-auto: update
+
+salt:
+  hash:
+    password: Coursenet2023
+
+jwt:
+  token:
+    issuer: course-net-application-2023
+    accessExpiration: 86400 # 24 hours
+    refreshExpiration: 864000 # 10 days
+    secret: course-net-application-demo-secret
